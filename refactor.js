@@ -5,19 +5,19 @@ let highscore = 0;
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 //SECTION FUNCTIONS - REFACTOR STAGE
-const displayMessage = function(message) {
+const displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
 }
-const displayScore = function(score) {
+const displayScore = function (score) {
   document.querySelector(".score").textContent = score;
 }
-const showSecretNumber = function(secretNumber) {
+const showSecretNumber = function (secretNumber) {
   document.querySelector(".number").textContent = secretNumber;
 }
-const bodyBackgroundColor = function(color) {
+const bodyBackgroundColor = function (color) {
   document.querySelector("body").style.backgroundColor = color;
 }
-const secretNumberWidth = function(width) {
+const secretNumberWidth = function (width) {
   document.querySelector(".number").style.width = width;
 }
 
