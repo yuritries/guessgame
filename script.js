@@ -37,6 +37,7 @@ console.log(secretNumber);
 
 //IMPORTANT We then implement the score reduction for the 2 last scenarios (guess > secretNumber) and (guess < secretNumber). We do that by crating a variable for the score and then updating that avriable for each try and then display the updated variable as the textContent for the .score element
 let score = 20; //state variable. Beacuse it is part of the application state which is all the data that is relevant to the application. The secretNumber is application state. We want all this important data to be always avaiable in the code and not just in the DOM.
+let highscore = 0;
 
 //IMPORTANT Now we want the game to end once you reach the score of 0. We'll set another if statement
 
@@ -56,6 +57,12 @@ document.querySelector(".check").addEventListener("click", function () {
 
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector(".number").style.width = "30rem";
+
+    //SECTION - IMPLEMENTING HIGHSCORE FUNCTIONALITY
+    if(score > highscore) {
+      highscore = score;
+      document.querySelector(".highscore").textContent = highscore;
+    }
 
   //SECTION WHEN GUESS IS TOO HIGH
   } else if (guess > secretNumber) {

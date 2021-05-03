@@ -92,3 +92,12 @@ AULA 76 - CHALLENGE - IMPLEMENT RESET FUNCTIONALITY`);
 4.resetar mensagem direita XXX
 5. resetar cor de fundo e largura do numero secreto  XXX 
 */
+
+//AULA 78 - CHALLENGE - refactoring the code 
+console.log(`
+AULA 78 - CHALLENGE - refactoring the code`);
+
+/*
+1.identify duplicates
+2.create functions to avoid repeating yourself
+*/
