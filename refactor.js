@@ -17,9 +17,6 @@ const showSecretNumber = function (secretNumber) {
 const bodyBackgroundColor = function (color) {
   document.querySelector("body").style.backgroundColor = color;
 }
-const secretNumberWidth = function (width) {
-  document.querySelector(".number").style.width = width;
-}
 
 //SECTION EVENT LISTENER
 document.querySelector(".check").addEventListener("click", function () {
@@ -33,8 +30,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess === secretNumber) {
     displayMessage("🎉 Número Correto!");
     showSecretNumber(secretNumber);
-    bodyBackgroundColor("#60b347");
-    secretNumberWidth("30rem");
+    bodyBackgroundColor("#222");
 
     //ARTICLE - IMPLEMENTING HIGHSCORE FUNCTIONALITY
     if (score > highscore) {
@@ -62,6 +58,5 @@ document.querySelector(".again").addEventListener("click", function () {
   displayScore(score);
   showSecretNumber("?");
   document.querySelector(".guess").value = "";
-  bodyBackgroundColor("#222");
-  secretNumberWidth("15rem");
+  bodyBackgroundColor("dodgerblue");
 });

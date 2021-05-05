@@ -14,7 +14,7 @@ html {
 body {
   font-family: "Press Start 2P", sans-serif;
   color: #eee;
-  background-color: #222;
+  background-color:dodgerblue;
   /* background-color: #60b347; */
 }
 
@@ -58,15 +58,18 @@ h1 {
 
 .number {
   background: #eee;
-  color: #333;
+  color: dodgerblue;
   font-size: 6rem;
   width: 15rem;
-  padding: 3rem 0rem;
-  text-align: center;
+  height: 15rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .between {
@@ -97,16 +100,19 @@ h1 {
 
 .btn {
   border: none;
-  background-color: #eee;
-  color: #222;
+  border-radius: 10px;
+  background-color: rgb(63, 165, 247);
+  color: #eee;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: #eee;
+  color: rgb(83, 165, 247);
 }
 
 .message {
